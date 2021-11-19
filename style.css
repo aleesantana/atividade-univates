@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ main.caixa {
+    background: white;
+    min-width: 320px;
+    min-height: 20vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+ }
+
+ main h1 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+ }
+
+ main h1::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+ }
+
+nav a {
+    font-weight: bold;
+	 font-size: 15px;
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    color: #000000;
+}
+
+nav a:hover {
+   letter-spacing: 0.9px;
+   color: #000000;
+}
+
+li {
+   list-style: none;
+}
+
+li:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background: linear-gradient(to right, #4776E6, #8e54e9);
+    border-radius: 4px;
+    transition: all 0.3s ease; 
+}

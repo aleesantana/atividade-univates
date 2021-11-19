@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+}
+
+main h1 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+}
+ 
+main h1::before {
+     content: '';
+     position: absolute;
+     height: 4px;
+     width: 25px;
+     bottom: 3px;
+     left: 500;
+     border-radius: 8px;
+     background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+.input-field {
+    position: relative;
+    padding: 0.4rem;
+}
+
+.input-field input {
+    outline: none; 
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left, #4776E6, #8e54e9);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.enviar {
+     width: 200px;
+     background: linear-gradient(45deg, #8e2de2, #4a00e0);
+     color: white;
+     border: none;
+     border-radius: 15px;
+     transition: 1s all;
+     cursor: pointer;
+ }
+
+ .enviar:hover {
+	transform: scale(1.2);
+}
